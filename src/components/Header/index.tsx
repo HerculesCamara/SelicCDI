@@ -1,13 +1,16 @@
 import LogoImg from '../../assets/Selic&CDI.png'
-import { ButtonHeader } from '../ButtonHeader'
-import { Container, Content } from './styles'
+import { Container, Content, Button } from './styles'
 
-export function Header() {
+interface ModalProps {
+  onOpenNewTransationModal: () => void
+}
+
+export function Header({ onOpenNewTransationModal }: ModalProps) {
   return (
     <Container>
       <Content>
-        <img src={LogoImg} />
-        <ButtonHeader />
+        <img src={LogoImg} alt="logo SelicCDI. Texto: Selic e Cdi" />
+        <Button onClick={onOpenNewTransationModal}>Calcular</Button>
       </Content>
     </Container>
   )
