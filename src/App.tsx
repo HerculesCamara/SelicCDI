@@ -4,6 +4,7 @@ import { GlobalStyle } from './styles/global'
 import { Explanation } from './components/Explanation'
 import Modal from 'react-modal'
 import { useState } from 'react'
+import { CalculationModal } from './components/CalculationModal'
 
 /* Selic hoje
 CDI hoje
@@ -32,12 +33,10 @@ function App() {
     <>
       <Header onOpenNewTransationModal={handleOpenNewCalculationModal} />
 
-      <Modal
+      <CalculationModal
         isOpen={isNewCalculationModalOpen}
         onRequestClose={handleCloseNewCalculationModal}
-      >
-        <h2>Teste</h2>
-      </Modal>
+      />
 
       <Values />
       <Explanation />
