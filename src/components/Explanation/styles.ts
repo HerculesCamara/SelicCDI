@@ -44,6 +44,11 @@ export const Content = styled.div`
     margin-top: 1.5rem;
   }
 
+  p:first-of-type {
+    margin-top: 0rem;
+    margin-bottom: 1.5rem;
+  }
+
   ul {
     list-style-position: inside;
 

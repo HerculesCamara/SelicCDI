@@ -4,6 +4,10 @@ export function Explanation() {
   return (
     <Container>
       <Content>
+        <p>
+          Atualmente a Selic está 13,75% e o CDI 13,50%. Se ouve muito falar
+          sobre a Selic e sobre o CDI, mas você sabe o são?
+        </p>
         <h2>O que é SELIC?</h2>
         <p>
           A <strong>Selic</strong> é a taxa base de juros da economia. É o

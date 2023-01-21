@@ -1,5 +1,16 @@
 import Modal from 'react-modal'
-import { Container } from './stykes'
+import { ModalInputText } from '../ModalInputText'
+import { ModalSelectAndInput } from '../ModalSelectAndInput'
+import {
+  Container,
+  CalcButton,
+  CloseButton,
+  InputSelectContainer,
+  NextCalcOption
+} from './styles'
+
+import CloseImg from '../../assets/close.svg'
+import { ModalCalcResult } from '../ModalCalcResult'
 
 interface CalcInvestmentModalProps {
   isOpen: boolean
@@ -11,10 +22,31 @@ export function CalculationModal({
   onRequestClose
 }: CalcInvestmentModalProps) {
   return (
-    <Modal isOpen={isOpen} onRequestClose={onRequestClose}>
+    <Modal
+      isOpen={isOpen}
+      onRequestClose={onRequestClose}
+      overlayClassName="react-modal-overlay"
+      className="react-modal-content"
+    >
       <Container>
-        <span>🤕</span>
-        <p>Essa função ainda não foi implementada</p>
+        <CloseButton>
+          {' '}
+          <img src={CloseImg} alt="" />{' '}
+        </CloseButton>
+
+        <ModalInputText />
+        <ModalInputText />
+
+        <InputSelectContainer>
+          <ModalSelectAndInput />
+          <ModalSelectAndInput />
+        </InputSelectContainer>
+
+        <ModalCalcResult />
+
+        <CalcButton>Calcular</CalcButton>
+
+        <NextCalcOption>Calcular a partir de uma meta</NextCalcOption>
       </Container>
     </Modal>
   )
