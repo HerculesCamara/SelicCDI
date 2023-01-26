@@ -41,6 +41,7 @@ export function CalculationModal({
           <ModalSelectAndInput />
           <ModalSelectAndInput />
         </InputSelectContainer>
+        
 
         <ModalCalcResult />
 

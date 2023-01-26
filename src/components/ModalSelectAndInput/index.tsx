@@ -3,6 +3,11 @@ import { Container, InputLabel, InputsContent, SelectContainer } from './styles'
 
 import arrowSvg from '../../assets/arrow_gray.svg'
 
+interface SelectInputProps {
+  title?: string
+  explain?: string
+}
+
 export function ModalSelectAndInput() {
   return (
     <Container>
