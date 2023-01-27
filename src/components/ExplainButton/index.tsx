@@ -4,10 +4,10 @@ import { Container, InfoBtt, Tooltip, TooltipContent } from './styles'
 import CloseImg from '../../assets/close.svg'
 
 interface ExplainButtonProps {
-  tooltipContent?: string
+  tooltipExplain?: string
 }
 
-export function ExplainButton() {
+export function ExplainButton({ tooltipExplain }: ExplainButtonProps) {
   const [toggle, setToggle] = useState(false)
 
   return (
@@ -15,9 +15,7 @@ export function ExplainButton() {
       <Tooltip onClick={() => setToggle(!toggle)} isActive={toggle}>
         <TooltipContent>
           <img src={CloseImg} alt="" />
-          <span>
-            Aqui é para ter um texto explicando pra que serve o campo.
-          </span>
+          <span>{tooltipExplain}</span>
         </TooltipContent>
       </Tooltip>
       <InfoBtt onClick={() => setToggle(!toggle)} isActive={toggle}>

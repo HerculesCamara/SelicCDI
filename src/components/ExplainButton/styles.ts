@@ -29,17 +29,15 @@ interface TooltipProps {
 }
 
 export const Tooltip = styled.div<TooltipProps>`
-  width: auto;
   min-width: 200px;
-  height: auto;
-  background: #fff;
+  min-height: 70px;
+  padding: 0.9rem 0.5rem;
+
   position: absolute;
-  top: calc(-100% - 10px);
-  left: -50%;
+  top: calc(-100% - 57px);
+  left: calc(-100% - 65px);
 
-  padding: 0.5rem;
-  padding-top: 0.7rem;
-
+  background: #fff;
   border: solid 1px var(--gray-medium);
   border-radius: 8px;
   box-shadow: 1px 1px 6px var(--gray-light);
@@ -54,14 +52,14 @@ export const TooltipContent = styled.div`
   font-size: 0.8rem;
 
   img {
-    width: 0.7rem;
+    width: 0.6rem;
     background: none;
     border: none;
 
     position: absolute;
-    top: -4px;
+    top: -7px;
     right: 0;
-    
+
     cursor: pointer;
   }
 `

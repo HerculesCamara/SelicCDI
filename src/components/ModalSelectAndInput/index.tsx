@@ -8,12 +8,12 @@ interface SelectInputProps {
   explain?: string
 }
 
-export function ModalSelectAndInput() {
+export function ModalSelectAndInput({ title, explain }: SelectInputProps) {
   return (
     <Container>
       <InputLabel>
-        <label>Período</label>
-        <ExplainButton />
+        <label>{title}</label>
+        <ExplainButton tooltipExplain={explain} />
       </InputLabel>
       <InputsContent>
         <input type="text" placeholder="0" />

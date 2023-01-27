@@ -34,14 +34,25 @@ export function CalculationModal({
           <img src={CloseImg} alt="" />{' '}
         </CloseButton>
 
-        <ModalInputText />
-        <ModalInputText />
+        <ModalInputText
+          title="Valor inicial"
+          explain="Valor com que você vai começar a investir. (Obs: pode ser R$ 0,00)"
+        />
+        <ModalInputText
+          title="Investimento mensal"
+          explain="Valor que você pretende invertir todos os meses."
+        />
 
         <InputSelectContainer>
-          <ModalSelectAndInput />
-          <ModalSelectAndInput />
+          <ModalSelectAndInput
+            title="Período"
+            explain="Digite por quanto tempo você prentender investir. (Ex: por 2 anos)"
+          />
+          <ModalSelectAndInput
+            title="Intervalo"
+            explain="Digite de quanto em quanto tempo você pretende aportar. (Ex: a cada 1 mês)"
+          />
         </InputSelectContainer>
-        
 
         <ModalCalcResult />
 

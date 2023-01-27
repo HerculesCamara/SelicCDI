@@ -1,17 +1,18 @@
 import { ExplainButton } from '../ExplainButton'
 import { InputContent, InputLabel, InputTextContainer } from './styles'
 
-interface InputtextProps {
-  Title?: string,
-  explain?: string
+interface InputTextProps {
+  title?: string,
+  explain?: string,
 }
 
-export function ModalInputText() {
+export function ModalInputText({ title, explain }: InputTextProps) {
+
   return (
     <InputTextContainer>
       <InputLabel>
-        <label>Valor inical</label>
-        <ExplainButton />
+        <label>{title}</label>
+        <ExplainButton tooltipExplain={explain} />
       </InputLabel>
       <InputContent>
         <span>R$</span>
