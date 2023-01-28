@@ -16,8 +16,13 @@ export const CloseButton = styled.button`
   right: 1.25rem;
 
   background: transparent;
-
   border: none;
+
+  transition: all 0.2s;
+
+  :hover{
+    filter: brightness(0.8);
+  }
 `
 
 export const InputSelectContainer = styled.div`

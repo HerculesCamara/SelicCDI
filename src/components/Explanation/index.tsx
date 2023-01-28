@@ -5,7 +5,7 @@ export function Explanation() {
     <Container>
       <Content>
         <p>
-          Atualmente a Selic está 13,75% e o CDI 13,50%. Se ouve muito falar
+          Atualmente a Selic está 13,75% e o CDI 13,65%. Se ouve muito falar
           sobre a Selic e sobre o CDI, mas você sabe o são?
         </p>
         <h2>O que é SELIC?</h2>

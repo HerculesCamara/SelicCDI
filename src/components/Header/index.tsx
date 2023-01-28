@@ -10,7 +10,7 @@ export function Header({ onOpenNewTransationModal }: ModalProps) {
     <Container>
       <Content>
         <img src={LogoImg} alt="logo SelicCDI. Texto: Selic e Cdi" />
-        <Button onClick={onOpenNewTransationModal}>Calcular</Button>
+        {/* <Button onClick={onOpenNewTransationModal}>Calcular</Button> */}
       </Content>
     </Container>
   )

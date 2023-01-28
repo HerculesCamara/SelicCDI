@@ -61,5 +61,11 @@ export const TooltipContent = styled.div`
     right: 0;
 
     cursor: pointer;
+
+    transition: all 0.2s;
+
+    :hover {
+      filter: brightness(0.8);
+    }
   }
 `
