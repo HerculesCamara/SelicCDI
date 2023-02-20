@@ -5,6 +5,7 @@ import { Explanation } from './components/Explanation'
 import Modal from 'react-modal'
 import { useState } from 'react'
 import { CalculationModal } from './components/CalculationModal'
+import { Footer } from './components/Footer'
 
 /* Selic hoje
 CDI hoje
@@ -40,6 +41,7 @@ function App() {
 
       <Values />
       <Explanation />
+      <Footer />
       <GlobalStyle />
     </>
   )
