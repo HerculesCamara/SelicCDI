@@ -1,17 +1,11 @@
-import LogoImg from '../../assets/Selic&CDI.png'
-import { Container, Content, Button } from './styles'
+import { Logo } from '../logo'
 
-interface ModalProps {
-  onOpenNewTransationModal: () => void
-}
-
-export function Header({ onOpenNewTransationModal }: ModalProps) {
+export const Header = () => {
   return (
-    <Container>
-      <Content>
-        <img src={LogoImg} alt="logo SelicCDI. Texto: Selic e Cdi" />
-        {/* <Button onClick={onOpenNewTransationModal}>Calcular</Button> */}
-      </Content>
-    </Container>
+    <header className="bg-sky-700">
+      <div className="mx-auto max-w-screen-2xl px-4 py-6 sm:px-6 lg:px-0">
+        <Logo />
+      </div>
+    </header>
   )
 }
