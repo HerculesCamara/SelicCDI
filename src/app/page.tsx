@@ -8,7 +8,7 @@ export default function Home() {
 
       <main>
         <section className="flex h-[calc(100dvh-80px)] bg-gradient-to-b from-sky-700 to-sky-950">
-          <div className="container my-auto flex h-full max-h-96 max-w-screen-2xl flex-col justify-between md:h-max md:flex-row md:items-center">
+          <div className="container my-auto flex h-full max-h-96 max-w-screen-xl flex-col justify-between md:h-max md:flex-row md:items-center">
             <Selic />
           </div>
         </section>
