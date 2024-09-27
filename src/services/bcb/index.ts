@@ -10,7 +10,7 @@ type CustomResponse = {
   data: {
     data: string
     valor: string
-  }
+  }[]
 }
 
 export const getSelic = async (initialDate?: Date, finalDate?: Date) => {
@@ -46,7 +46,7 @@ export const getSelic = async (initialDate?: Date, finalDate?: Date) => {
     return []
   }
 
-  return data as CustomResponse['data'][]
+  return data as CustomResponse['data']
 }
 
 export const getCdi = async (initialDate?: Date, finalDate?: Date) => {
@@ -82,5 +82,5 @@ export const getCdi = async (initialDate?: Date, finalDate?: Date) => {
     return []
   }
 
-  return data as CustomResponse['data'][]
+  return data as CustomResponse['data']
 }
