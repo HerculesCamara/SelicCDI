@@ -25,7 +25,6 @@ export const getSelic = async (initialDate?: Date, finalDate?: Date) => {
   }
 
   const response = await fetch(url, {
-    cache: 'force-cache',
     next: {
       revalidate: 60 * 60 * 24,
       tags: ['bcb', 'selic'],
@@ -62,7 +61,6 @@ export const getCdi = async (initialDate?: Date, finalDate?: Date) => {
   }
 
   const response = await fetch(url, {
-    cache: 'force-cache',
     next: {
       revalidate: 60 * 60 * 24,
       tags: ['bcb', 'cdi'],
