@@ -14,6 +14,7 @@ export const Selic = async () => {
 
   const cdi = await getCdi(lastUtilDay)
 
+  console.log(cdi)
   const formattedSelic = selic.at(0)?.valor.replace('.', ',')
   const formattedCdi = cdi.at(0)?.valor.replace('.', ',')
 
