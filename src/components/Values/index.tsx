@@ -12,14 +12,14 @@ export function Values() {
       <Content>
         <div>
           <h1>Selic</h1>
-          <h2>13,75%</h2>
+          <h2>10,75%</h2>
         </div>
         <div>
           <p>&amp;</p>
         </div>
         <div>
           <h1>CDI</h1>
-          <h2>13,65%</h2>
+          <h2>11,15%</h2>
         </div>
       </Content>
       <Understand onClick={handleClickButton}>
